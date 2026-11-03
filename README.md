@@ -145,3 +145,38 @@ sql-server-inventory-etl/
     └── SSIS_Package_Overview.md
 ```
 
+## Technical Skills Demonstrated
+
+### SQL Server
+- Database design and relational modelling.
+- T-SQL stored procedures.
+- Common Table Expressions (CTEs).
+- Data validation and quality controls.
+- Transactional inventory imports.
+- Audit logging and batch reconciliation.
+
+### SQL Server Integration Services (SSIS)
+- CSV file ingestion.
+- Flat File Source configuration.
+- Derived Column transformations.
+- OLE DB Destination configuration.
+- Control Flow and precedence constraints.
+- Batch processing controls.
+
+### Data Engineering Concepts
+- ETL pipeline development.
+- Data staging and transformation.
+- Data quality management.
+- Duplicate detection.
+- Error handling and auditability.
+- Batch-level reconciliation.
+- Controlled data loading.
+
+### Tools
+- Microsoft SQL Server
+- SQL Server Management Studio (SSMS)
+- SQL Server Integration Services (SSIS)
+- GitHub
+- T-SQL
+- CSV
+
