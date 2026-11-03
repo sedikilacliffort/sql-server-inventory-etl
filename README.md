@@ -180,3 +180,58 @@ sql-server-inventory-etl/
 - T-SQL
 - CSV
 
+## Testing and Execution Results
+
+The inventory ETL workflow was tested using **Import Batch 4**, containing six inventory records loaded from a CSV file through the SSIS package.
+
+### Batch 4 Validation Results
+
+| Metric | Result |
+|---|---:|
+| Total Records | 6 |
+| Passed Records | 6 |
+| Rejected Records | 0 |
+| Warning Records | 4 |
+| Duplicate Records | 0 |
+
+Four records generated existing-inventory warnings. Two records were eligible for import.
+
+### Inventory Import Results
+
+| Metric | Result |
+|---|---:|
+| Import Batch ID | 4 |
+| Audit ID | 6 |
+| Records Inserted | 2 |
+| Import Status | Succeeded |
+
+The import procedure successfully inserted two eligible inventory records while preventing the re-import of existing inventory combinations.
+
+### Batch Reconciliation Results
+
+| Metric | Result |
+|---|---:|
+| Total Records | 6 |
+| Validated Records | 6 |
+| Passed Records | 6 |
+| Rejected Records | 0 |
+| Duplicate Records | 0 |
+| Existing Inventory Records | 4 |
+| Ready-for-Import Records | 2 |
+| Total Import Attempts | 1 |
+| Successful Import Attempts | 1 |
+| Failed Import Attempts | 0 |
+| Total Imported Rows | 2 |
+
+### Test Outcome
+
+The Batch 4 execution demonstrated the end-to-end inventory ETL process:
+
+- CSV data successfully loaded into SQL Server staging through SSIS.
+- Inventory records validated against defined data quality rules.
+- Existing inventory records identified through warnings.
+- Eligible records successfully imported into the inventory table.
+- Import activity recorded in the audit table.
+- Batch reconciliation snapshot generated successfully.
+
+**Overall Result: Passed**
