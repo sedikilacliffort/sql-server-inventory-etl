@@ -17,6 +17,7 @@ Without proper validation and processing controls, these data quality issues can
 This project implements a controlled ETL process to identify data issues and import only eligible inventory records.
 
 ## Solution Architecture
+![SQL Server Inventory ETL Architecture](SQL%20Server%20Inventory%20ETL%20Architecture.png)
 
 CSV Source File  
 ↓  
