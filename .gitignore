@@ -1,0 +1,23 @@
+# SQL Server and SSIS files
+*.bak
+*.trn
+*.mdf
+*.ldf
+
+# Visual Studio temporary files
+.vs/
+bin/
+obj/
+
+# User-specific SSIS and Visual Studio files
+*.user
+*.suo
+
+# Temporary files
+*.tmp
+*.log
+.DS_Store
+
+# Sensitive configuration files
+.env
+*.config.local
