@@ -111,3 +111,36 @@ This project uses synthetic data and is intended for learning, demonstration, an
 ## Author
 
 Cliffort Sedikila
+
+## Project Structure
+
+```text
+sql-server-inventory-etl/
+│
+├── documentation/
+│   ├── Database_Design.md
+│   ├── Data_Validation_Rules.md
+│   ├── ETL_Workflow.md
+│   └── Deployment_Guide.md
+│
+├── seed_data/
+│   └── 01_Insert_Item_Seed_Data.sql
+│
+├── sql/
+│   ├── tables/
+│   │   ├── 01_Create_Item_Table.sql
+│   │   ├── 02_Create_Inventory_Table.sql
+│   │   ├── 03_Create_InventoryImportBatch_Table.sql
+│   │   ├── 04_Create_INV_Validation_Test_Table.sql
+│   │   ├── 05_Create_InventoryImportAudit_Table.sql
+│   │   └── 06_Create_InventoryBatchReconciliation_Table.sql
+│   │
+│   └── stored_procedures/
+│       ├── 01_usp_ValidateInventory.sql
+│       ├── 02_usp_ImportInventory.sql
+│       └── 03_usp_ReconcileInventoryBatch.sql
+│
+└── ssis/
+    └── SSIS_Package_Overview.md
+```
+
